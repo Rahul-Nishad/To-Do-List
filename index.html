@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="bumblebee">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,6 +10,7 @@
     <!--Icons-->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="to do.png">
+    <script src="https://kit.fontawesome.com/4437cb303f.js" crossorigin="anonymous"></script>
 
     <title>Todolist</title>
 </head>
@@ -20,11 +21,11 @@
     <div class="container">
         <!-- header that has input and add button -->
         <header>
-            <h1>To-Do-List</h1>
+            <h1><i class="fa-solid fa-list-check"></i> To-Do-List</h1>
 
             <div class="input-section">
-                <input id="todo-input" type="text" placeholder="📑 Enter a task..."
-                    class="input w-full max-w-xs" />
+                <h1></h1>
+                <input id="todo-input" type="text" placeholder="📑 Enter a task..." class="input w-full max-w-xs" />
                 <button id="add-button" class="btn btn-add ">
                     <i class="bx bx-plus bx-sm"></i>
                 </button>
@@ -53,7 +54,7 @@
         <!-- dropdown throgh which we can apply filters -->
         <div class="filters">
             <div class="dropdown">
-                <button class="dropbtn">Filter</button>
+                <button class="dropbtn">Task Filter</button>
                 <div class="dropdown-content">
                     <a href="#" id="all">All</a>
                     <a href="#" id="rem">Pending</a>
@@ -69,7 +70,10 @@
                 <p>Total Tasks: <span id="r-count">0</span></p>
             </div>
         </div>
+
     </div>
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
 
     <!-- JS -->
     <script src="script.js"></script>
